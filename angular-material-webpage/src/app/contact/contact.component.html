@@ -1,0 +1,20 @@
+<div class="contact-container">
+  <a name="contact"><span class="anchor"></span></a>
+  <h1 class="section-header">Contact</h1>
+  <p id="message">Drop me a message!</p>
+  <div class="form-container">
+    <form [formGroup]="contactForm" #contactFormDirective="ngForm" (ngSubmit)="onSubmit(contactFormDirective)">
+      <mat-form-field class="left-side">
+        <input matInput formControlName="personName" placeholder="Name">
+      </mat-form-field>
+      <mat-form-field class="right-side">
+        <input  matInput formControlName="email" placeholder="Email">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <textarea  matInput formControlName="message" placeholder="Message"></textarea>
+      </mat-form-field>
+      <button mat-raised-button type="submit" [disabled]="!contactForm.valid">Submit</button>
+    </form>
+  </div>
+</div>
+

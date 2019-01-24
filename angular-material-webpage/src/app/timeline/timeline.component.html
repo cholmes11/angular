@@ -1,0 +1,6 @@
+<app-timeline-item
+  *ngFor="let experience of timeline"
+  [experience]="experience"
+  (click)="clicked(experience)"
+  [class.selected]="isSelected(experience)">
+</app-timeline-item>

@@ -1,0 +1,36 @@
+<div class="header-container">
+  <mat-toolbar class="header">
+
+    <mat-toolbar-row>
+      <span>Chris Holmes</span>
+      <span class="remaining-space"></span>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar-row>
+
+  </mat-toolbar>
+</div>
+
+
+<mat-menu #menu="matMenu">
+  <a href="#about">
+    <button mat-menu-item class="menu-item">
+        <mat-icon [ngStyle]="{'color': '#031D46' }">account_circle</mat-icon>
+        <span class="menu-item">About</span>
+    </button>
+  </a>
+  <a href="#experience">
+    <button mat-menu-item>
+        <mat-icon [ngStyle]="{'color': '#031D46' }">work</mat-icon>
+        <span class="menu-item">Experience</span>
+    </button>
+  </a>
+  <a href="#contact">
+    <button mat-menu-item>
+        <mat-icon [ngStyle]="{'color': '#031D46' }">email</mat-icon>
+        <span class="menu-item">Contact</span>
+    </button>
+  </a>
+</mat-menu>
+

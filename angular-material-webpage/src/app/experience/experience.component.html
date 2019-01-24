@@ -1,0 +1,10 @@
+<div class="experience-container">
+  <a name="experience"><span class="anchor"></span></a>
+  <h1 class="section-header">My Experience</h1>
+  <div class="timeline-container">
+    <app-timeline
+      [timeline]="experience"
+      (onExperienceSelected)="experienceSelected($event)">
+    </app-timeline>
+  </div>
+</div>

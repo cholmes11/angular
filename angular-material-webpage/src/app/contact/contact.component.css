@@ -1,0 +1,25 @@
+.contact-container {
+  padding: 3% 5% 3% 5%;
+}
+
+#message {
+  text-align: center;
+}
+
+.form-container {
+  padding: 0% 20% 0% 20%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.right-side {
+  padding-left: 5%;
+  width: 45%;
+}
+
+.left-side {
+  padding-right: 5%;
+  width: 45%;
+}

@@ -1,0 +1,7 @@
+<div class="timeline-item">
+  <h2>{{ experience.startDate }} - {{ experience.endDate }}</h2>
+  <h3>{{ experience.title }} @ {{ experience.company }}</h3>
+  <ul>
+    <li *ngFor="let detail of experience.details">{{ detail }}</li>
+  </ul>
+</div>
